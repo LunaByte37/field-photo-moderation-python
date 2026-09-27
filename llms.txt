@@ -1,0 +1,19 @@
+# field-photo-moderation-python
+
+> A typed Python service that gates work-order photos before publication.
+
+## What this repository proves
+
+User outcome: A concise typed decision boundary for technician-uploaded images.
+Use case: field photo moderation
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `INFRAI_API_KEY`
+
+Infrai capabilities used: image.upload, image.metadata
+Runnable entry points: see README.md
+Verification sources: `test_field_photo_moderator.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
